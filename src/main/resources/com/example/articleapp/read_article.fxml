@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.articleapp.controllers.ReadArticleController">
+    <children>
+        <AnchorPane layoutY="120.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #3c466b;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="120.0">
+         <children>
+            <ScrollPane hbarPolicy="NEVER" layoutX="264.0" layoutY="22.0" prefHeight="238.0" prefWidth="700.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <content>
+                  <Label fx:id="text_label" alignment="TOP_LEFT" focusTraversable="false" prefWidth="700.0" style="-fx-label-padding: 10;" text="Label" wrapText="true">
+                     <font>
+                        <Font name="System Italic" size="14.0" />
+                     </font>
+                  </Label>
+               </content>
+            </ScrollPane>
+         </children>
+        </AnchorPane>
+        <Label alignment="CENTER" layoutX="250.0" layoutY="38.0" prefHeight="50.0" prefWidth="200.0" text="Articles">
+            <font>
+                <Font name="Berlin Sans FB Demi Bold" size="39.0" />
+            </font>
+        </Label>
+      <ImageView fx:id="back_btn" fitHeight="86.0" fitWidth="47.0" layoutX="8.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/back_button.png" />
+         </image>
+         <effect>
+            <Bloom />
+         </effect>
+      </ImageView>
+    </children>
+</AnchorPane>
